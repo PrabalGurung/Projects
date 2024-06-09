@@ -1,0 +1,193 @@
+@charset "ISO-8859-1";
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+    color: white;
+    padding: 55px 50px;
+    flex-wrap: wrap;
+    
+}
+
+.logo-section, .menu-section, .follow-us-section, .newsletter-section {
+    margin-right: 20px;
+}
+
+.logo-section h1, .menu-section h2, .follow-us-section h2, .newsletter-section h2 {
+    font-size: 24px;
+    padding: 20px 0px;
+}
+
+.logo-section p, .menu-section ul li, .follow-us-section ul li, .newsletter-section input, .newsletter-section button {
+    font-size: 14px;
+}
+
+.menu-section ul, .follow-us-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-section ul li, .follow-us-section ul li {
+    margin-bottom: 10px;
+}
+
+.newsletter-section input {
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.newsletter-section button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+/*About Us page*/
+.about{
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    padding: 50px 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(/test);
+    background-size: cover;
+    
+}
+.about .about-body h2{
+    font: size 64px;
+    font-weight: 500;
+    color: #000000;
+    
+}
+.about .about-body p{
+    font-weight: 300;
+    color: #000000;
+}
+.contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+.contact .contact-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+.contact .contact-info .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    background-color: #68686800;
+}
+.contact .contact-info .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.contact .contact-info .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #000000;
+    flex-direction: column;
+    font-weight: 300;
+}
+.contact .contact-info .box .text h3{
+    font-weight: 500;
+    font-size: 26px;
+    color: #2E2F2F;
+
+}
+.contact-form{
+    width: 40;
+    padding: 40px;
+    background: #fff;
+}
+.contact-form h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+
+}
+.contact-form .inputBox{
+    position:relative;
+    width: 100%;
+    margin-top: 10px;
+
+}
+.contact-form .inputBox input, 
+.contact-form .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contact-form .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #000;
+    
+}
+.contact-form .inputBox input:focus ~ span,
+.contact-form .inputBox input:valid ~ span,
+.contact-form .inputBox textarea:focus ~ span,
+.contact-form .inputBox textarea:valid ~ span{
+    color: #2E2F2F;
+    font-size: 12px;
+    transform: translateY(-20px);
+
+}
+.contact-form .inputBox input[type= submit]{
+    width: 100px;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    cursor: none;
+    border: none;
+    background: #2E2F2F;
+}
+@media(max-width: 991px)
+{
+    .about
+    {
+        padding: 50px;
+    }
+    .contact
+    {
+        flex-direction: column;
+    }
+    .contact .contact-info
+    {
+        margin-bottom: 40px;
+    }
+    .contact .contact-info
+    {
+        width: 100%;
+    }
+}
+.footer .logo-section img{
+    flex: 1;
+    color:#fff;
+     
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
